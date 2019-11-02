@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<form method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <center>
+        {{ form.startGame }}
+    </center>
+</form>
+
+{% endblock %}

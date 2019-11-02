@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1>What is the capital of india</h1><br>
+
+<form method="post" action="" novalidate>
+{{ form.hidden_tag() }}
+    <center>
+    {{ form.answer.label }}
+        <br>
+    {{ form.answer(size=32) }}
+        {% for error in form.validate.errors %}
+        [{{ error }}]
+        {% endfor %}
+        <br>
+    {{ form.submit() }}
+    </center>
+</form>
+
+{% endblock %}

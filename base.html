@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>welcome to millionaire club</title>
+    {% endif %}
+</head>
+<body>
+<center>
+    <a href="/">Home</a>
+    <h1>Do you want to be a millionaire ??</h1>
+    <a href="/login">Login</a>
+    <hr>
+    {% block content %}
+    {% endblock %}
+
+</center>
+</body>
+</html>
